@@ -15,11 +15,11 @@ REST API
 Clone repository
 
 ```bash
-# Using HTTPS method.
-$ git clone https://github.com/tcsoares84/poc-nest-graphql.git
-
 # Using SSL method.
-$ git@github.com:tcsoares84/poc-nest-graphql.git
+$ git clone git@github.com:drowper/ravenclaw.git
+
+# Using HTTPS method.
+$ git clone https://github.com/drowper/ravenclaw.git
 ```
 
 ## Running
@@ -35,7 +35,7 @@ After Docker launch the application containers you need to install application d
 
 ```bash
 # Enter into containner.
-$ docker exec -it poc-nest-graphql bash
+$ docker exec -it ravenclaw bash
 
 # Install application dependencies.
 $ yarn install
@@ -44,7 +44,7 @@ $ yarn install
 Run application.
 
 ```bash
-http://localhost:4000/
+http://localhost:3000/
 ```
 
 ## Test
@@ -52,6 +52,9 @@ http://localhost:4000/
 ```bash
 # Run unit tests.
 $ yarn test
+
+# Run e2e tests.
+$ yarn test:e2e
 
 # Run test coverage.
 $ yarn test:cov
